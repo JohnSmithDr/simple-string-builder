@@ -1,19 +1,26 @@
 {
   "name": "simple-string-builder",
   "version": "0.1.0",
-  "description": "Simple string builder for ES2015 and nodejs",
+  "description": "Simple string writer for both browser javascript and nodejs.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "browserify standalone.js -r util -o dist/string-writer.js -t [ babelify --presets [ es2015 ] ] && browserify standalone.js -t [ babelify --presets [ es2015 ] ] | uglifyjs -c > dist/string-writer.min.js",
+    "test": "mocha test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JohnSmithDr/simple-string-builder.git"
+    "url": "git+https://github.com/JohnSmithDr/string-writer.git"
   },
   "author": "johnsmith1st <johnsmith1st@live.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/JohnSmithDr/simple-string-builder/issues"
+    "url": "https://github.com/JohnSmithDr/string-writer/issues"
   },
-  "homepage": "https://github.com/JohnSmithDr/simple-string-builder#readme"
+  "homepage": "https://github.com/JohnSmithDr/string-writer#readme",
+  "devDependencies": {
+    "babel-core": "^6.9.0",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babelify": "^7.3.0"
+  }
 }

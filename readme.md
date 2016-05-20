@@ -1,3 +1,3 @@
-# simple-string-builder
+# string-writer
 
-Simple string builder for ES2015 and nodejs.
+Simple string writer for both browser javascript and nodejs.
