@@ -115,10 +115,10 @@ module.exports = function () {
 (function (global){
 'use strict';
 
-global.window.StringWriter = require('./src/StringWriter');
+global.window.StringWriter = require('./index');
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./src/StringWriter":1}],3:[function(require,module,exports){
+},{"./index":1}],3:[function(require,module,exports){
 if (typeof Object.create === 'function') {
   // implementation from standard node.js 'util' module
   module.exports = function inherits(ctor, superCtor) {

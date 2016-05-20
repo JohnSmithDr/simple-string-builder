@@ -1,1 +1,1 @@
-global.window.StringWriter = require('./src/StringWriter');
+global.window.StringWriter = require('./index');
