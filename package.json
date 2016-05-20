@@ -1,5 +1,5 @@
 {
-  "name": "simple-string-builder",
+  "name": "string-writer",
   "version": "0.1.0",
   "description": "Simple string writer for both browser javascript and nodejs.",
   "main": "index.js",
