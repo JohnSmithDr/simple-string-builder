@@ -1,0 +1,19 @@
+{
+  "name": "simple-string-builder",
+  "version": "0.1.0",
+  "description": "Simple string builder for ES2015 and nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnSmithDr/simple-string-builder.git"
+  },
+  "author": "johnsmith1st <johnsmith1st@live.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JohnSmithDr/simple-string-builder/issues"
+  },
+  "homepage": "https://github.com/JohnSmithDr/simple-string-builder#readme"
+}
